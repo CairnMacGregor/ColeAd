@@ -7,29 +7,6 @@
 }
 /* ANIMATIONS */
 
-@keyframes wiggle {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
 @keyframes animateright {
   from {
     right: -300px;
@@ -370,10 +347,14 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.3s ease-out;
+  text-align: center;
 }
 
 .productCard:hover {
   cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease-out;
 }
 
 .productTitle {
@@ -435,6 +416,12 @@ ul {
   display: flex;
   justify-content: center;
   z-index: 3;
+  transition: 0.2s ease;
+}
+
+.imgWrap:hover {
+  transform: rotate(-5deg);
+  transition: 0.2s ease;
 }
 .interviewTop img {
   width: 50%;
